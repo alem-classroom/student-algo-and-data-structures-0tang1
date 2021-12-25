@@ -10,7 +10,7 @@ def steps(num):
     		fn = f1 + f0
     		f0 = f1
     		f1 = fn
-    	return f0
+    	return f1
     
 
 # print(steps(7))
