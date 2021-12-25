@@ -3,8 +3,10 @@ def steps(num):
     # return number of required steps
     f0 = 0
     f1 = 1
-    if num <= 2 and num >= 0:
+    if num <= 1 and num >= 0:
     	return num
+    elif num == 2:
+        return 1
     elif num == 3:
         return 2
     else:
