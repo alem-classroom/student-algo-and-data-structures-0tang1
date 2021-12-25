@@ -5,7 +5,7 @@ def linear_search(lst, to_find):
   res = -1
   for i in range(len(lst)):
     if lst[i] == to_find:
-        res  = i
+        res  = lst[i]
   return res
     
 
