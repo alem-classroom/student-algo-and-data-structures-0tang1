@@ -3,14 +3,16 @@ def steps(num):
     # return number of required steps
     f0 = 0
     f1 = 1
-    if num <= 3 and num >= 0:
+    if num <= 2 and num >= 0:
     	return num
+    elif num == 3:
+        return 2
     else:
     	for i in range(num):
-    		fn = f1 + f0
+    		fn = f0 + f1
     		f0 = f1
     		f1 = fn
-    	return f0
+    	return f1
     
 
 # print(steps(7))
