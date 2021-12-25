@@ -7,7 +7,8 @@ def binary_search(lst, to_find):
     while l <= r:
         m = (l+r) // 2
         if lst[m] == to_find:
-            return m
+            # return m
+            return lst[m]
         elif to_find < lst[m]:
             r = m-1
         elif to_find > lst[m]:
