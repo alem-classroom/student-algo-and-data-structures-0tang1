@@ -38,6 +38,6 @@ class LinkedList:
         return lst
 
 
-my_list = LinkedList()
+# my_list = LinkedList()
 
-my_list.head = Node("Mon")
+# my_list.head = Node("Mon")
