@@ -7,13 +7,13 @@ class Node:
 class LinkedList:
     def __init__(self):
         # initialize Linked List by initializing head
-        self.head = None
+        self.head = Node()
     
     def get_head(self):
         # return head of the Linked List
         current_node = self.head
         current_node = current_node.next
-        return current_node.value
+        return(current_node.value)
 
     def insert_back(self, node):
         # insert node to the back of the Linked List
