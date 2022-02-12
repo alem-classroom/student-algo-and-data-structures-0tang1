@@ -5,7 +5,7 @@ class Node:
         # initialize Node with value, and next being None
 
 class LinkedList:
-    def __init__(self):
+    def __init__(self, head = None):
         # initialize Linked List by initializing head
         self.head = Node()
     
@@ -18,13 +18,10 @@ class LinkedList:
     def insert_back(self, node):
         # insert node to the back of the Linked List
         new_node = Node(node)
-        if self.head is None:
-            self.head = new_node
-            return
-        last_node = self.head
-        while (last_node.next):
-            last_node = last_node.next
-        last_node.next = new_node
+        cur_node = self.head
+        while cur_node.next is not None:
+            cur_node = cur_node.next
+        cur_node.next= new_node
 
     def get_last(self):
         # return last node of the Linked List
