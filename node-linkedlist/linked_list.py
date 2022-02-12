@@ -28,9 +28,10 @@ class LinkedList:
 
     def get_last(self):
         # return last node of the Linked List
-        while self.head.next is not None:
-            self.head = self.head.next
-        return self.head.value
+        cur_node = self.head
+        while cur_node.next is not None:
+        	cur_node = cur_node.next
+        return(cur_node.value)
 
     def get_list(self):
         # create list and append every value of Linked List to it.
