@@ -11,9 +11,10 @@ class LinkedList:
     
     def get_head(self):
         # return head of the Linked List
-        current_node = self.head
-        current_node = current_node.next
-        return current_node.value
+        # current_node = self.head
+        # current_node = current_node.next
+        # return current_node.value
+        return self.head.next.value
 
     def insert_back(self, node):
         # insert node to the back of the Linked List
