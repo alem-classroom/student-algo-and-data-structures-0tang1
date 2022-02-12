@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, value):
+    def __init__(self, value = None):
         self.value = value
         self.next = None
         # initialize Node with value, and next being None
@@ -11,10 +11,9 @@ class LinkedList:
     
     def get_head(self):
         # return head of the Linked List
-        # current_node = self.head
-        # current_node = current_node.next
-        # return current_node.value
-        return self.head.next.value
+        current_node = self.head
+        current_node = current_node.next
+        return current_node.value
 
     def insert_back(self, node):
         # insert node to the back of the Linked List
